@@ -61,4 +61,11 @@ public class TowerFragment extends Fragment
         this.towerLayout.addView(disk);
         this.towerLayout.addView(this.theButton);
     }
+
+    //REMOVE DISK (remove from source stack)
+
+    public void removeDisk(int size)
+    {
+        this.towerLayout.removeView(disk);
+    }
 }

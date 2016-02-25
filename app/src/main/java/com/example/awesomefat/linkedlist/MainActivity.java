@@ -37,26 +37,11 @@ public class MainActivity extends AppCompatActivity
 
         LinearLayout svLL = (LinearLayout)this.findViewById(R.id.scrollViewLL);
         ListCore.ll = new LinkedList(svLL);
-        //ll.addFront("1");
-        //ll.addFront("2");
-        //ll.addFront("3");
-        //ll.addFront("4");
-        //ll.display();
         ListCore.ll.addEnd("6");
         ListCore.ll.addEnd("7");
         ListCore.ll.addEnd("8");
         ListCore.ll.display();
 
-        /*
-        View v;
-        for(int i = 0; i < 10; i++)
-        {
-            v = this.getLayoutInflater().inflate(R.layout.node, null);
-            TextView tf = (TextView) v.findViewById(R.id.theValueTF);
-            tf.setText("" + i);
-            svLL.addView(v);
-        }
-        */
     }
 
     public void stackButtonClicked(View sender)
